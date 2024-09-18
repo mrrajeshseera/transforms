@@ -1,0 +1,28 @@
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Example transformations: */
+  .image-grid img:nth-child(1) {
+    transform: translate(50px, -20px) scale(1.2);
+  }
+  
+  .image-grid img:nth-child(2) {
+    transform: skewX(15deg) rotate(-10deg);
+  }
+  
+  .image-grid img:nth-child(3) {
+    transform: scale(0.8) skewY(-10deg);
+  }
+  
+  .image-grid img:nth-child(4) {
+    transform: translate(-30px, 20px) rotate(20deg);
+  }
